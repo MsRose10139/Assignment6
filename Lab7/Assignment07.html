@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment07</title>
+</head>
+<body>
+    <from action="">
+        <fieldset>
+            <legend><font color="blue">ข้อมูลส่วนตัว</font></legend><br>
+            <br />คำนำหน้าชื่อ :
+            <input type="radio" name="income" value="level1">นาย
+            <input type="radio" name="income" value="level2">นางสาว
+            <input type="radio" name="income" value="level3">นาง
+            <br />ชื่อ :
+            <input type="text" name="ชื่อ" size="50" maxlength="10">
+            <br />นามสกุล :
+            <input type="text" name="นามสกุล" size="50" maxlength="10">
+            <br />เลขบัตรประชาชน :
+            <input type="number" name="เลขบัตรประชาชน" size="50" maxlength="10">
+            <br />ศาสนา :
+            <select name="ศาสนา">
+            <option value="ศาสนา">เลือก</option>
+            <option value="ศาสนา">พุทธ</option>
+            <option value="ศาสนา">คริส</option>
+            <option value="ศาสนา">อิสราม</option>
+            <option value="ศาสนา">อื่นๆ</option>
+            </select>
+            <br>วัน/เดือน/ปีเกิด<input type="date" name="birthday">
+            <br>สถานภาพ :
+            <input type="radio" name="sts" value="1">โสด
+            <input type="radio" name="sts" value="2">สมรส
+            <input type="radio" name="sts" value="3">หย่าร้าง
+        </fieldset><br>
+        <fieldset>
+            <legend><font color="blue">ที่อยู่ปัจจุบัน</font></legend><br>
+            บ้านเลขที่ :
+            <input type="text" name="ชื่อ" size="20" maxlength="10">
+            หมู่ที่ :
+            <input type="text" name="ชื่อ" size="10" maxlength="10">
+            อาคาร :
+            <input type="text" name="ชื่อ" size="20" maxlength="10">
+            หมู่บ้าน :
+            <input type="text" name="ชื่อ" size="20" maxlength="10">
+            <br />ถนน :
+            <input type="text" name="ชื่อ" size="30" maxlength="10">
+            แขวน :
+            <input type="text" name="ชื่อ" size="20" maxlength="10">
+            เขต/อำเภอ :
+            <input type="text" name="ชื่อ" size="20" maxlength="10">
+            <br />จังหวัด :
+            <input type="text" name="ชื่อ" size="20" maxlength="10">
+            รหัสไปรษณีย์ :
+            <input type="text" name="ชื่อ" size="10" maxlength="10">
+            <br />เบอร์โทร :
+            <input type="number" name="ชื่อ" size="50" maxlength="10">
+        </fieldset>
+        <fieldset>
+            <legend><font color="blue">ความรู้ด้านภาษาต่างประเทศ</font></legend><br>
+            <form action="">
+                <input type="checkbox" name="LNG" value="TH" checked="checked"> ไทย
+                <input type="checkbox" name="LNG" value="EN"> อังกฤษ
+                <input type="checkbox" name="LNG" value="CH"> จีน
+                <input type="checkbox" name="LNG" value="JA"> ญี่ปุ่น
+            </form>
+        </fieldset>
+        รูปผู้สมัคร(jpg ขนาดไม่เกิน 100 kb):
+        <from name="example" method="POST" action="" enctype="">
+            <input type="file">
+            <p Align="center"><font color="red"><input type="checkbox">โดยใบสมัครนี้ข้าพเจ้าขอรับรองว่า ข้อมูลที่กรอกเป็นความจริงทุกประการ หากมีการกล่าวเท็จ ในใบสมัครนี้ จะเป็นสาเหตุอันเพียงพอที่จะปลดข้าพเจ้าออกจากงานได้</font></p>
+            <p Align="center"><input type="submit" value="send data">&nbsp &nbsp 
+            <input type="reset" value="clear from"></p>
+        </from>
+    </from>
+</body>
+</html>
